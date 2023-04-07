@@ -14,9 +14,7 @@ int main()
 {
 
     // Account objects test
-
-    
-    shared_ptr<Account> p2 = make_shared<Trust_Account>("Ben",7000, 2);
+    auto p2 = make_shared<Trust_Account>("Ben",7000, 2);
     auto p3 = make_shared<Checking_Account>("John", 5000, 20);
     auto p4 = make_shared<Savings_Account>("Tom", 10000, 2);
     
