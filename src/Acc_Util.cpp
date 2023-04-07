@@ -2,7 +2,7 @@
 
 // some functions to help test the inheritance and polymorphism stacture
 
-void mass_display(const vector <Account *> &accounts)
+void mass_display(const vector<shared_ptr<Account>> &accounts)
 {
     cout << "Accounts:" << endl ;
     for(auto &acc : accounts)
@@ -12,7 +12,7 @@ void mass_display(const vector <Account *> &accounts)
     cout << "==========================" << endl;
 }
 
-void mass_deposit(vector <Account *> &accounts, const double &amount)
+void mass_deposit(vector<shared_ptr<Account>> &accounts, const double &amount)
 {
     cout << "Depositing:" << endl;
     for(auto &acc : accounts)
@@ -26,7 +26,7 @@ void mass_deposit(vector <Account *> &accounts, const double &amount)
     cout << "==========================" << endl;
 }
 
-void mass_withdraw(vector <Account *> &accounts, const double &amount)
+void mass_withdraw(vector<shared_ptr<Account>> &accounts, const double &amount)
 {
     cout << "Withdrawing:" << endl; 
     for(auto &acc : accounts)
